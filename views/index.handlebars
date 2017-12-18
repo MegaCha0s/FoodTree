@@ -1,0 +1,125 @@
+<html>
+
+<head>
+          <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="public/css/style.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <script src="../FoodTree1/app.js"></script>
+    <script src="../routes/users.js"></script>
+    <style>
+        a:visited,
+        a:link {
+            display: block;
+            font-weight: bold;
+            color: maroon;
+            width: 200px;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+        }
+        
+        a:hover,
+        a:active {
+            color: darkgreen;
+        }
+        #gallery {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        #gallery div {
+            flex: auto;
+            margin: 0.2em;
+        }
+
+        img {
+            border: 3px solid orange;
+        }
+        .logoStart1 {
+            height: 80vh;
+            width: 100%;
+            overflow: hidden;
+            position: absolute;
+            margin-top: 250px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .logoDown1 {
+            height: 140vh;
+            width: 100%;
+            background-image: url("https://newevolutiondesigns.com/images/freebies/white-wallpaper-14.jpg");
+            background-size: 100% 100%;
+            background-position: center;
+            font-size: 150px;
+            text-align: center;
+            line-height: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+           transform: translate(-50%, -50%);
+            padding-top: 250px;
+            -webkit-background-clip: text;
+            color: transparent;
+            transition: all 2.5s ease-in-out;
+            font-family: 'Dancing Script', cursive;
+        }
+
+.logoStart1:hover .logoDown1 {
+    background-size: 80% 80%;
+}
+
+.bg1 {
+    height: 40vh;
+    width: 100%;
+    background-image: url("http://www.desktop-screens.com/data/out/94/3345828-restaurant-wallpapers.jpg");
+    background-size: 20% 60%;
+    background-position: center;
+    transform: rotateY(180deg);
+    transition: all 2.5s ease-in-out;
+}
+
+
+
+    </style>
+    <title>Food</title>
+</head>
+
+<body>
+<div class="logoStart1">
+  <div class="bg1"></div>
+  <div class="logoDown1">Menu</div>
+</div>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<!--<h1 class="indexMenu">{{title}} Menu</h1>-->
+<br /><br /><br />
+
+{{# each products }}
+  <div class="row">
+    <div class="col-md-12">
+      <div class="thumbnail">
+        <div class="caption thumbnail">
+          <h3>{{ this.title }}</h3>
+            <p class="description">{{{this.description}}}</p>
+            <div class="clearfix">
+            <div class="price pull-left"><i class="fa fa-tag" aria-hidden="true"></i> Rs. {{ this.price }} </div>
+              <a href="/add/{{ this.id }}" class="btn btn-default pull-right" onclick="congrats()" role="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{{/each}}
+<a href="/cart" class="btn btn-default pull-center" role="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Checkout</a>
+
+</body>
+<script>
+        function congrats(){
+                //document.getElementById("demo")= 
+                alert("Food Added to Cart");
+        }
+    </script>
+</html>

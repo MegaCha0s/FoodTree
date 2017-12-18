@@ -1,0 +1,31 @@
+{
+  "name": "FoodTree",
+  "version": "1.0.0",
+  "description": "FoodTree",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nishan Tamang",
+  "license": "ISC",
+  "dependencies": {
+    "admin-mongo": "0.0.23",
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "mongodb": "*",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*"
+  },
+  "devDependencies": {
+    "mongoose": "^4.10.8"
+  }
+}

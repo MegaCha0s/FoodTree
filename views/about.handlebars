@@ -1,0 +1,174 @@
+<html>
+
+<head>
+
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+          <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="public/css/style.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <script src="../FoodTree1/app.js"></script>
+    <script src="../routes/users.js"></script>
+    <style>
+        a:visited,
+        a:link {
+            display: block;
+            font-weight: bold;
+            color: maroon;
+            width: 200px;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+        }
+        
+        a:hover,
+        a:active {
+            color: darkgreen;
+        }
+        #gallery {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        #gallery div {
+            flex: auto;
+            margin: 0.2em;
+        }
+
+        img {
+            border: 3px solid orange;
+        }
+        .logoStart1 {
+            height: 80vh;
+            width: 100%;
+            overflow: hidden;
+            position: absolute;
+            margin-top: 250px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .logoDown1 {
+            height: 140vh;
+            width: 100%;
+            background-image: url("https://hdwallsource.com/img/2014/5/green-background-21872-22425-hd-wallpapers.jpg");
+            background-size: 100% 100%;
+            background-position: center;
+            font-size: 150px;
+            text-align: center;
+            line-height: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+           transform: translate(-50%, -50%);
+            padding-top: 250px;
+            -webkit-background-clip: text;
+            color: transparent;
+            transition: all 2.5s ease-in-out;
+            font-family: 'Dancing Script', cursive;
+        }
+
+.logoStart1:hover .logoDown1 {
+    background-size: 80% 80%;
+}
+
+.bg1 {
+    height: 40vh;
+    width: 100%;
+    background-image: url("http://1.bp.blogspot.com/-xdzjFZA_c5g/U0e0Tv4JQpI/AAAAAAAACLs/1Tz6tfucOLo/s1600/3D%20Technology%20New%20HD%20Wallpapers%203.jpg");
+    background-size: 100%;
+    background-position: center;
+    transform: rotateY(180deg);
+    transition: all 2.5s ease-in-out;
+}
+
+.gallery {
+  position: relative;
+  z-index: 2;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.gallery.pop {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+.gallery figure {
+  -ms-flex-preferred-size: 33.333%;
+      flex-basis: 33.333%;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.gallery figure img {
+  width: 60%;
+  height: 70%;
+  border-radius: 10px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.guide{
+    margin-left: 450px;
+    margin-top:100px;
+}
+h3{
+    font-family: 'Lato', sans-serif;
+}
+    </style>
+    <title>About Us</title>
+</head>
+
+<body>
+<div class="logoStart1">
+  <div class="bg1"></div>
+  <div class="logoDown1">About Us</div>
+</div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+<div class="container">
+    <h3>Hello Everyone, this is Nishan from BCA 5. First of all we would like to thank our guide Mr. Vijay Prasad for helping us in our project. We are Group 1. 
+        Our group consists of me Nishan Tamang(DC2015ICA0013), Rajdeep Ghost(DC2015ICA0020) and Biswadeep Chakraborty(DC2015ICA0028).
+    </h3><br /><br /><br />
+    <div class="gallery">
+  <figure>
+    <img src="http://devashianvalley.weebly.com/uploads/2/6/9/6/2696159/236056703_orig.jpg" alt="" />
+    <figcaption>Nishan Tamang <small>DC2015ICA0013</small></figcaption>
+  </figure>
+  <figure>
+    <img src="https://static.comicvine.com/uploads/original/12/127192/5077934-7246311465-latest" alt="" />
+    <figcaption>Rajdeep Ghosh <small>DC2015ICA0020</small></figcaption>
+  </figure>
+  <figure>
+    <img src="https://avatarfiles.alphacoders.com/567/thumb-56740.jpg" alt="" />
+    <figcaption>
+      Biswadeep Chakraborty <small>DC2015ICA0028</small>
+    </figcaption>
+  </figure>
+  <figure class="guide">
+    <img src="http://philosophy.ucr.edu/wp-content/uploads/2014/10/no-profile-img-240x300.gif" alt="" />
+    <figcaption>
+      Mr Vijay Prasad <small>Dept. CSE & IT</small>
+    </figcaption>
+  </figure>
+  </div>
+</div>
+<br /><br /><br /><br /><br />
+<!--<h1 class="indexMenu">{{title}} Menu</h1>-->
+<br /><br /><br />
+
+
+
+</body>
+
+</html>
