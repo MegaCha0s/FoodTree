@@ -7,6 +7,14 @@ This is my mini project for my 5th sem.
 
 ### Usage
 
+Once Installed,
+```sh
+  $ npm start
+``` 
+OR
+```sh
+  $ nodemon
+```
 
 ### Installation
 
